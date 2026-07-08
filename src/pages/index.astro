@@ -1,18 +1,36 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { frontmatter, Content } from "../data/resume.md";
+
+const email = import.meta.env.SECRET_EMAIL || "ry****@gmail.com";
+const phone = import.meta.env.SECRET_PHONE || "021-****-****";
 ---
 
-<Layout>
+<Layout title={`${frontmatter.name} - Resume`}>
   <main>
     <header>
-      <h1>Header1</h1>
-      <p>Paragraph</p>
+      <h1>
+        {frontmatter.name}
+      </h1>
+      <p>{frontmatter.role}</p>
+
+      <div>
+        <span><strong>[Location]: </strong>{frontmatter.location}</span>
+        <span><strong>[Email]: </strong>{email}</span>
+        <span><strong>[Phone]: </strong>{phone}</span>
+        <a href={frontmatter.github} target="_blank"
+          ><strong>[GitHub]: </strong>
+          {frontmatter.github.replace("https://", "")}</a
+        >
+        <a href={frontmatter.linkedin} target="_blank"
+          ><strong>[LinkedIn]: </strong>
+          {frontmatter.linkedin.replace("https://", "")}</a
+        >
+      </div>
     </header>
 
     <article>
-      <div>
-        <p>Resume Contents</p>
-      </div>
+      <Content />
     </article>
   </main>
 </Layout>

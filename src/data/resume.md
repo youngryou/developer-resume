@@ -6,13 +6,15 @@ location: "Auckland, New Zealand"
 visa_status: "Permanent Resident Visa"
 
 github: "https://github.com/youngryou"
-linkedin: "https://www.linkedin.com/in/young-ryou/"
+linkedin: "https://linkedin.com/in/young-ryou/"
 portfolio: "TODO"
 ---
 
-# Personal Summary
+# About Me
 
-# Tech Stack
+# Skills
+
+## Tech Stack
 
 - **Languages:** JavaScript (ES6+), TypeScript, PHP, HTML5, CSS3
 - **Frontend Frameworks & Libraries:** React.js, Astro, Tailwind CSS

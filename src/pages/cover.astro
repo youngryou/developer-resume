@@ -1,0 +1,33 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { frontmatter, Content } from "../data/cover-letters/company-A.md";
+
+const email = import.meta.env.SECRET_EMAIL || "ry****@gmail.com";
+const phone = import.meta.env.SECRET_PHONE || "021-****-****";
+---
+
+<Layout title={`Cover Letter - ${frontmatter.company}`}>
+  <main>
+    <header>
+      <div>
+        <h1>{frontmatter.name}</h1>
+        <p>{email} | {phone}</p>
+        <p>{frontmatter.location}</p>
+      </div>
+
+      <div>
+        <p>{frontmatter.date}</p>
+        <p>
+          {frontmatter.company}
+        </p>
+        <p>
+          Application for {frontmatter.position}
+        </p>
+      </div>
+    </header>
+
+    <article>
+      <Content />
+    </article>
+  </main>
+</Layout>
