@@ -11,7 +11,10 @@ import "../styles/global.css";
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
   </head>
-  <body>
+  <body
+    class="bg-[linear-gradient(170deg,#0369a1_25%,#f3f4f6_25%,#f3f4f6_75%,#0369a1_75%)] min-h-screen
+           text-gray-900 font-sans print:bg-white print:text-black selection:bg-gray-200"
+  >
     <PrintButton />
     <slot />
   </body>
