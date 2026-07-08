@@ -7,26 +7,87 @@ const phone = import.meta.env.SECRET_PHONE || "021-****-****";
 ---
 
 <Layout title={`${frontmatter.name} - Resume`}>
-  <main>
-    <header>
-      <h1>
-        {frontmatter.name}
-      </h1>
-      <p>{frontmatter.role}</p>
+  <main
+    class="max-w-[210mm] mx-auto bg-white p-10 md:p-14 shadow-lg my-10 print:shadow-none print:my-0 print:p-0"
+  >
+    <header class="mb-6">
+      <div
+        class="flex flex-col md:flex-row md:justify-between md:items-start print:flex-row print:justify-between gap-4"
+      >
+        <div>
+          <h1
+            class="text-4xl font-black text-sky-700 uppercase tracking-wider print:text-3xl"
+          >
+            {frontmatter.name}
+          </h1>
+          <p
+            class="text-base font-bold text-slate-800 uppercase tracking-wider mt-1 print:text-sm"
+          >
+            {frontmatter.role}
+          </p>
+        </div>
 
-      <div>
-        <span><strong>[Location]: </strong>{frontmatter.location}</span>
-        <span><strong>[Email]: </strong>{email}</span>
-        <span><strong>[Phone]: </strong>{phone}</span>
-        <a href={frontmatter.github} target="_blank"
-          ><strong>[GitHub]: </strong>
-          {frontmatter.github.replace("https://", "")}</a
-        >
-        <a href={frontmatter.linkedin} target="_blank"
-          ><strong>[LinkedIn]: </strong>
-          {frontmatter.linkedin.replace("https://", "")}</a
-        >
+        <div>
+          <a
+            href={frontmatter.portfolio}
+            target="_blank"
+            class="inline-block px-3 py-1 bg-sky-50 text-sky-700 border border-sky-200 rounded-md text-xs font-bold hover:bg-sky-100 transition-colors print:bg-transparent print:border-none print:p-0 print:text-sky-800"
+          >
+            Portfolio →
+          </a>
+        </div>
       </div>
+
+      <div
+        class="mt-5 grid grid-cols-1 sm:grid-cols-3 gap-y-3 gap-x-6 text-xs text-slate-600 print:text-slate-800"
+      >
+        <div class="flex flex-col gap-1">
+          <span
+            class="font-bold text-[10px] uppercase tracking-wider text-sky-700"
+            >Profiles</span
+          >
+          <div class="flex flex-col gap-0.5 font-medium text-slate-700">
+            <a
+              href={frontmatter.github}
+              target="_blank"
+              class="hover:text-sky-700 underline print:no-underline"
+            >
+              {frontmatter.github.replace("https://", "")}
+            </a>
+            <a
+              href={frontmatter.linkedin}
+              target="_blank"
+              class="hover:text-sky-700 underline print:no-underline"
+            >
+              {frontmatter.linkedin.replace("https://", "")}
+            </a>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-1">
+          <span
+            class="font-bold text-[10px] uppercase tracking-wider text-sky-700"
+            >Contact</span
+          >
+          <div class="flex flex-col gap-0.5 font-medium text-slate-700">
+            <span>{phone}</span>
+            <span>{email}</span>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-1">
+          <span
+            class="font-bold text-[10px] uppercase tracking-wider text-sky-700"
+            >Eligibility</span
+          >
+          <div class="flex flex-col gap-0.5 font-medium text-slate-700">
+            <span>{frontmatter.location}</span>
+            <span>{frontmatter.visa_status}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-b-[1.5px] border-sky-700 mt-4"></div>
     </header>
 
     <article>
