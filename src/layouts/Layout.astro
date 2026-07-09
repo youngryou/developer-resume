@@ -29,7 +29,7 @@ import "../styles/global.css";
   @reference "tailwindcss";
 
   .prose h1 {
-    @apply text-xl font-bold mt-10 mb-4 uppercase tracking-wider text-sky-700
+    @apply text-xl font-bold mt-6 mb-3 uppercase tracking-wider text-sky-700
            border-b border-slate-200 pb-1.5
            pl-3 border-l-4 border-l-sky-700;
   }
@@ -40,10 +40,10 @@ import "../styles/global.css";
     @apply text-base font-medium mt-3 mb-2 text-gray-800;
   }
   .prose p {
-    @apply mb-2 text-gray-600 print:text-gray-800 text-sm md:text-base;
+    @apply mb-2 text-gray-600 print:text-gray-800 text-sm;
   }
   .prose ul {
-    @apply list-inside space-y-1 mb-2 text-gray-600 print:text-gray-800 text-sm md:text-base;
+    @apply list-inside space-y-1 mb-2 text-gray-600 print:text-gray-800 text-sm;
   }
   .prose a {
     @apply text-sky-700 hover:underline print:no-underline;
@@ -58,7 +58,7 @@ import "../styles/global.css";
     -webkit-print-color-adjust: exact;
   }
   .prose li code {
-    @apply px-2 py-0.5 bg-sky-700 text-white rounded-lg text-sm font-bold tracking-wide;
+    @apply px-2 py-0.5 bg-sky-700 text-white rounded-md text-xs font-bold tracking-wide;
   }
 
   @page {

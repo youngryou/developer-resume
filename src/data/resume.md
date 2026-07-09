@@ -12,16 +12,24 @@ portfolio: "TODO"
 
 # About Me
 
+I am a junior full-stack developer who transitioned into tech after graduating with a Bachelor of Property from the University of Auckland.
+While taking a career break to raise my twin daughters, I took on the challenge of building Carrect, a reverse auction web application. It reignited my early interest in software engineering from my previous studies in South Korea, and I decided to pursue development professionally.
+I enrolled in Dev Academy to learn how real-world teams write efficient code and communicate to prevent complex codebases from getting tangled.
+Recently, I acted as Product Owner for a full-stack code typing game, guiding my team from concept to successful launch.
+I want to bring my strong ownership, diligent work ethic, and collaborative mindset to an engineering team. View my work at [portfolio link]().
+
 # Skills
 
-## Tech Stack
+## Technical Skills
 
-- **Languages:** JavaScript (ES6+), TypeScript, PHP, HTML5, CSS3
-- **Frontend Frameworks & Libraries:** React.js, Astro, Tailwind CSS
-- **Backend & Server-side:** Node.js (Express), Superagent
-- **Databases & Backend as a Service:** PostgreSQL, MySQL, Supabase, WordPress
-- **Authentication & Security:** Auth0, Clerk
-- **Tools, Deployment & Platforms:** Git, GitHub, VS Code, DigitalOcean, Render
+- **Languages & Frontend:** `JavaScript` `TypeScript` `React` `Astro` `Tailwind CSS`
+- **Backend & Databases:** `Node.js` `Express` `PostgreSQL` `PHP` `WordPress`
+- **Tools & Platforms:** `Git & GitHub` `Supabase` `Clerk` `DigitalOcean`
+
+## Human Skills
+
+- **Collaborative:** `Agile Teamwork` `Adaptability`
+- **Personal Attributes:** `Ownership` `Strong Work Ethic`
 
 # Projects
 
