@@ -1,6 +1,16 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { frontmatter, Content } from "../data/cover-letters/company-A.md";
+
+const currentFiles = import.meta.glob("../data/cover-letters/current.md", {
+  eager: true,
+});
+const currentFileKey = "../data/cover-letters/current.md";
+
+const targetLetter = currentFiles[currentFileKey]
+  ? (currentFiles[currentFileKey] as any)
+  : await import("../data/cover-letter-sample.md");
+
+const { frontmatter, Content } = targetLetter;
 
 const email = import.meta.env.SECRET_EMAIL || "ry****@gmail.com";
 const phone = import.meta.env.SECRET_PHONE || "021-****-****";

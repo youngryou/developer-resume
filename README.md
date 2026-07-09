@@ -7,7 +7,7 @@ A developer-centric resume using Astro and Tailwind CSS. It separates content (M
 - **Data-UI Separation:** Resume and cover letter content are managed via Markdown files.
 - **Print-Optimised (`@media print`):** Generates formatted, A4-sized PDFs directly from the browser without any layout breaks.
 - **Privacy First:** Sensitive personal information (like phone numbers and emails) is managed via environment variables and safely masked during public deployment.
-- **Cover Letter Management:** Includes a `.gitignore`-protected `cover-letters/` folder to write and manage company-specific cover letters locally without exposing them to the public repository.
+- **Cover Letter Management:** Includes a public sample file for deployment fallback and a `.gitignore`-protected folder to manage your actual cover letter locally without exposing it to the public repository.
 - **Blazing Fast:** Built with Astro for zero-client-side JavaScript by default.
 
 ## Tech Stack
@@ -22,15 +22,16 @@ A developer-centric resume using Astro and Tailwind CSS. It separates content (M
 .
 ├── public/
 ├── src/
-│   ├── components/       # Shared UI components (e.g., PrintButton.astro)
-│   ├── layouts/          # Global layout containing @media print rules
+│   ├── components/                 # Shared UI components (e.g., PrintButton.astro)
+│   ├── layouts/                    # Global layout containing @media print rules
 │   ├── data/
-│   │   ├── resume.md     # Core resume content
-│   │   └── cover-letters/ # Local-only cover letters (ignored by Git)
+│   │   ├── resume.md               # Core resume content
+│   │   ├── cover-letter-sample.md  # Public fallback sample for deployment
+│   │   └── cover-letters/          # Local-only cover letters (ignored by Git)
 │   └── pages/
-│       ├── index.astro   # Main resume page
-│       └── cover.astro   # Cover letter page
-├── .env.example          # Template for environment variables
+│       ├── index.astro             # Main resume page
+│       └── cover.astro             # Cover letter page
+├── .env.example                    # Template for environment variables
 └── .gitignore
 ```
 
@@ -62,7 +63,15 @@ A developer-centric resume using Astro and Tailwind CSS. It separates content (M
    - **Resume**: `http://localhost:4321`
    - **Cover Letter**: `http://localhost:4321/cover`
 
-6. Click the **"Save as PDF"** button on the top right to test the print layout and save your application documents.
+6. **To write and print your cover letter:**
+   - Create the directory and the target file:
+     ```bash
+     mkdir -p src/data/cover-letters && touch src/data/cover-letters/current.md
+     ```
+   - Open `current.md` and add your frontmatter and letter body.
+   - The local preview at `/cover` will automatically switch from the sample text to your customised content.
+
+7. Click the **"Save as PDF"** button on the top right to test the print layout and save your application documents.
 
 ## License
 

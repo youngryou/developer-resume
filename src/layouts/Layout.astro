@@ -1,6 +1,9 @@
 ---
 const { title } = Astro.props;
+import { ClientRouter } from "astro:transitions";
+
 import PrintButton from "../components/PrintButton.astro";
+import Navigation from "../components/Navigation.astro";
 import "../styles/global.css";
 ---
 
@@ -10,11 +13,13 @@ import "../styles/global.css";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
+    <ClientRouter />
   </head>
   <body
     class="bg-[linear-gradient(170deg,#0369a1_25%,#f3f4f6_25%,#f3f4f6_75%,#0369a1_75%)] min-h-screen
            text-gray-900 font-sans print:bg-white print:text-black selection:bg-gray-200"
   >
+    <Navigation />
     <PrintButton />
     <slot />
   </body>
@@ -41,16 +46,19 @@ import "../styles/global.css";
     @apply list-inside space-y-1 mb-2 text-gray-600 print:text-gray-800 text-sm md:text-base;
   }
   .prose a {
-    @apply hover:underline print:no-underline;
+    @apply text-sky-700 hover:underline print:no-underline;
   }
   .prose strong {
     @apply font-semibold text-gray-900;
   }
   .prose code {
-    @apply inline-block px-2 py-0.5 mx-0.5 my-0.5 
-    bg-sky-700 text-white rounded text-sm font-bold tracking-wide;
+    @apply inline-block px-1.5 mx-0.5 my-0.5 
+    bg-gray-300 text-gray-800 rounded-sm text-sm;
     print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
+  }
+  .prose li code {
+    @apply px-2 py-0.5 bg-sky-700 text-white rounded-lg text-sm font-bold tracking-wide;
   }
 
   @page {
