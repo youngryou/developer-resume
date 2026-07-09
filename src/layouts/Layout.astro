@@ -1,6 +1,9 @@
 ---
 const { title } = Astro.props;
+import { ClientRouter } from "astro:transitions";
+
 import PrintButton from "../components/PrintButton.astro";
+import Navigation from "../components/Navigation.astro";
 import "../styles/global.css";
 ---
 
@@ -10,11 +13,13 @@ import "../styles/global.css";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
+    <ClientRouter />
   </head>
   <body
     class="bg-[linear-gradient(170deg,#0369a1_25%,#f3f4f6_25%,#f3f4f6_75%,#0369a1_75%)] min-h-screen
            text-gray-900 font-sans print:bg-white print:text-black selection:bg-gray-200"
   >
+    <Navigation />
     <PrintButton />
     <slot />
   </body>

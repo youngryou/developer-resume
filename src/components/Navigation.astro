@@ -1,0 +1,26 @@
+---
+const pathname = Astro.url.pathname;
+---
+
+<nav class="print:hidden fixed top-6 left-6 z-50 flex gap-3">
+  <a
+    href="/"
+    class={`px-5 py-2.5 rounded-lg text-sm font-medium transition-all shadow-md ${
+      pathname === "/"
+        ? "bg-gray-900 text-white"
+        : "bg-white text-gray-900 hover:bg-gray-700 hover:text-white"
+    }`}
+  >
+    CV
+  </a>
+  <a
+    href="/cover"
+    class={`px-5 py-2.5 rounded-lg text-sm font-medium transition-all shadow-md ${
+      pathname.startsWith("/cover")
+        ? "bg-gray-900 text-white"
+        : "bg-white text-gray-900 hover:bg-gray-700 hover:text-white"
+    }`}
+  >
+    Cover Letter
+  </a>
+</nav>
