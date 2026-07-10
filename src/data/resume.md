@@ -26,6 +26,8 @@ I want to bring my strong ownership, diligent work ethic, and collaborative mind
 - **Backend & Databases:** `Node.js` `Express` `PostgreSQL` `PHP` `WordPress`
 - **Tools & Platforms:** `Git & GitHub` `Supabase` `Clerk` `DigitalOcean`
 
+---
+
 ## Human Skills
 
 - **Collaborative:** `Agile Teamwork` `Adaptability`
@@ -33,19 +35,31 @@ I want to bring my strong ownership, diligent work ethic, and collaborative mind
 
 # Projects
 
-## AAA (2026.04 - 2026.05)
+<div class="entry-header">
+  <h2>Syntax Sprint <p class="entry-location">@ Dev Academy</p></h2>
+  <strong>Jun 2026</strong>
+</div>
 
-aaaaa
+A fast paced web based code typing game designed to help developers improve their syntax familiarity and typing speed.
+[[Live Demo](https://syntax-sprint.onrender.com/) | [GitHub Repo](https://github.com/youngryou/syntax-sprint)]
 
-- **Tech:** React, Vite, PostgreSQL
-- **Details:** aaa aaa aaa
+- **Tech Stack:** `React` `TypeScript` `Node.js` `Express` `PostgreSQL`
+- **Role:** Acted as Product Owner and full-stack developer. Managed the project scope, designed the component architecture, and led the team from initial concept to successful MVP launch.
+- **Outcome:** Completed the core MVP ahead of schedule. Successfully implemented real time typing accuracy tracking and data persistence for user scores.
 
-## BBB (2025.12 - 2026.02)
+---
 
-bbbbb
+<div class="entry-header">
+  <h2>Carrect <p class="entry-location">@ Independent Development</p></h2>
+  <strong>Sep 2025 - Jan 2026</strong>
+</div>
 
-- **Tech:** JavaScript, PHP, MySQL
-- **Details:** bbb bbb bbb
+A reverse auction platform for the New Zealand vehicle repair market, allowing users to request and compare panel beating quotes.
+[[Launch Pending]()]
+
+- **Tech Stack:** `JavaScript` `PHP` `WordPress` `MySQL` `DigitalOcean`
+- **Role:** Sole Developer. Engineered the core application logic by implementing Layered Architecture (Domain, HTTP, Infra) within a custom plug-in structure and the database architecture from scratch.
+- **Outcome:** Successfully built and delivered a fully functional MVP within four months, currently deployed on a staging environment. Executing a comprehensive pre-launch codebase audit to ensure system stability, database reliability, and compliance with NZ regulations ahead of the production launch.
 
 # Experience
 

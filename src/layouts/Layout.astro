@@ -43,13 +43,16 @@ import "../styles/global.css";
     @apply mb-2 text-gray-600 print:text-gray-800 text-sm;
   }
   .prose ul {
-    @apply list-inside space-y-1 mb-2 text-gray-600 print:text-gray-800 text-sm;
+    @apply list-inside space-y-0.5 mb-1 text-gray-600 print:text-gray-800 text-sm;
   }
   .prose a {
     @apply text-sky-700 hover:underline print:no-underline;
   }
   .prose strong {
-    @apply font-semibold text-gray-900;
+    @apply font-semibold text-gray-700;
+  }
+  .prose hr {
+    @apply border-t border-slate-100 my-2;
   }
   .prose code {
     @apply inline-block px-1.5 mx-0.5 my-0.5 
@@ -58,7 +61,13 @@ import "../styles/global.css";
     -webkit-print-color-adjust: exact;
   }
   .prose li code {
-    @apply px-2 py-0.5 bg-sky-700 text-white rounded-md text-xs font-bold tracking-wide;
+    @apply mx-0 px-2 py-0.5 bg-sky-700 text-white rounded-md text-xs font-bold tracking-wide;
+  }
+  .prose .entry-header {
+    @apply flex flex-col sm:flex-row sm:justify-between sm:items-center;
+  }
+  .prose .entry-location {
+    @apply my-auto ml-2;
   }
 
   @page {
