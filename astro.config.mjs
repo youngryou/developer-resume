@@ -6,6 +6,9 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://youngryou.github.io",
+  base: "/developer-resume",
+
   markdown: {
     processor: unified({
       rehypePlugins: [
