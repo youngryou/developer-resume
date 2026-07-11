@@ -12,7 +12,7 @@ portfolio: "TODO"
 
 # About Me
 
-I am a junior full-stack developer who transitioned into tech after graduating with a Bachelor of Property from the University of Auckland.
+I am a full-stack developer who transitioned into tech after graduating with a Bachelor of Property from the University of Auckland.
 While taking a career break to raise my twin daughters, I took on the challenge of building Carrect, a reverse auction web application. This experience reconnected me with my foundational studies in software engineering from South Korea, inspiring me to transition into development professionally.
 I enrolled in Dev Academy to learn how real-world teams write efficient code and communicate to prevent complex codebases from getting tangled.
 Recently, I acted as Product Owner for a full-stack code typing game, guiding my team from concept to successful launch.
@@ -30,8 +30,8 @@ View my work at [portfolio link]().
 
 ## Human Skills
 
-- **Collaborative:** `Agile Teamwork` `Adaptability`
-- **Personal Attributes:** `Ownership` `Strong Work Ethic`
+- **Collaborative:** `Agile Teamwork` `Pair Programming`
+- **Personal Attributes:** `Self-Directed Learning` `End-to-End Delivery`
 
 # Projects
 
@@ -59,12 +59,12 @@ A reverse auction platform for the New Zealand vehicle repair market, allowing u
 
 - **Tech Stack:** `JavaScript` `PHP` `WordPress` `MySQL` `DigitalOcean`
 - **Role:** Sole Developer. Engineered the core application logic by implementing Layered Architecture (Domain, HTTP, Infra) within a custom plug-in structure and the database architecture from scratch.
-- **Outcome:** Successfully built and delivered a fully functional MVP within four months, currently deployed on a staging environment. Executing a comprehensive pre-launch codebase audit to ensure system stability, database reliability, and compliance with NZ regulations ahead of the production launch.
+- **Outcome:** Built and deployed an MVP to staging in just four months. Currently polishing the codebase and refining the database architecture to ensure a stable, compliant production launch.
 
 # Experience
 
 <div class="entry-header">
-  <h2>Software Developer Trainee <p class="entry-location">@ Dev Academy Aotearoa</p></h2>
+  <h2>Software Developer <p class="entry-location">@ Dev Academy Aotearoa</p></h2>
   <span class="entry-date">Mar 2026 - Jul 2026</span>
 </div>
 
