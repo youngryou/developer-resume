@@ -20,10 +20,18 @@ View my work at [portfolio link]().
 
 # Skills
 
+## Technical Skills
+
 - **Languages & Frontend:** `JavaScript` `TypeScript` `React` `Astro` `Tailwind CSS`
 - **Backend & Databases:** `Node.js` `Express` `PostgreSQL` `PHP` `WordPress`
 - **Tools & Platforms:** `Git` `GitHub` `Supabase` `Clerk` `DigitalOcean`
-- **Human Skills:** `Agile Teamwork` `Adaptability` `Ownership` `Strong Work Ethic`
+
+---
+
+## Human Skills
+
+- **Collaborative:** `Agile Teamwork` `Adaptability`
+- **Personal Attributes:** `Ownership` `Strong Work Ethic`
 
 # Projects
 
@@ -108,30 +116,38 @@ A reverse auction platform for the New Zealand vehicle repair market, allowing u
 # Education
 
 <div class="entry-header">
-  <h2>Applied Software Development <p class="entry-location">@ Dev Academy Aotearoa</p></h2>
+  <h2>Certificate in Applied Software Development (level 6)</h2>
   <span class="entry-date">2026</span>
 </div>
 
+### Dev Academy Aotearoa
+
 ---
 
 <div class="entry-header">
-  <h2>Bachelor of Property <p class="entry-location">@ University of Auckland</p></h2>
+  <h2>Bachelor of Property</h2>
   <span class="entry-date">2023</span>
 </div>
 
+### University of Auckland
+
 ---
 
 <div class="entry-header">
-  <h2>Diploma in Business <p class="entry-location">@ UUNZ Institute of Business</p></h2>
+  <h2>Diploma in Business</h2>
   <span class="entry-date">2012</span>
 </div>
 
+### UUNZ Institute of Business
+
 ---
 
 <div class="entry-header">
-  <h2>Coursework in Software Engineering <p class="entry-location">@ Dongyang University (Korea)</p></h2>
+  <h2>Completed Coursework in Software Engineering</h2>
   <span class="entry-date">2011</span>
 </div>
+
+### Dongyang University (Korea)
 
 # Interests
 
