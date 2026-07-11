@@ -99,14 +99,10 @@ A reverse auction platform for the New Zealand vehicle repair market, allowing u
   <span class="entry-date">Jun 2017 - Jun 2018</span>
 </div>
 
----
-
 <div class="entry-header">
   <h2>Sales and Delivery Manager <p class="entry-location">@ Wang Trading</p></h2>
   <span class="entry-date">Apr 2015 - Apr 2017</span>
 </div>
-
----
 
 <div class="entry-header">
   <h2>Restaurant Manager <p class="entry-location">@ Faro Takapuna</p></h2>
