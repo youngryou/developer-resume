@@ -16,7 +16,7 @@ const email = import.meta.env.SECRET_EMAIL || "ry****@gmail.com";
 const phone = import.meta.env.SECRET_PHONE || "021-****-****";
 ---
 
-<Layout title={`Cover Letter - ${frontmatter.company}`}>
+<Layout title={`Cover Letter - ${frontmatter.name} | ${frontmatter.company}`}>
   <main
     class="max-w-[210mm] w-full mx-auto bg-white p-8 sm:p-14 shadow-lg my-10 print:max-w-none print:w-[210mm] print:shadow-none print:my-0 print:p-0"
   >
