@@ -6,8 +6,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://youngryou.github.io",
-  base: "/developer-resume",
+  site: "https://resume.youngryou.com",
 
   markdown: {
     processor: unified({

@@ -1,15 +1,13 @@
 ---
 const pathname = Astro.url.pathname;
 
-const basePath = import.meta.env.BASE_URL.replace(/\/$/, "");
-
-const isCV = pathname === basePath || pathname === `${basePath}/`;
-const isCover = pathname.startsWith(`${basePath}/cover`);
+const isCV = pathname === "/" || pathname === "";
+const isCover = pathname.startsWith("/cover");
 ---
 
 <nav class="print:hidden fixed top-6 left-6 z-50 flex gap-3">
   <a
-    href={`${basePath}/`}
+    href="/"
     class={`px-5 py-2.5 rounded-lg text-sm font-medium transition-all shadow-md ${
       isCV
         ? "bg-gray-900 text-white"
@@ -19,7 +17,7 @@ const isCover = pathname.startsWith(`${basePath}/cover`);
     CV
   </a>
   <a
-    href={`${basePath}/cover`}
+    href="/cover"
     class={`px-5 py-2.5 rounded-lg text-sm font-medium transition-all shadow-md ${
       isCover
         ? "bg-gray-900 text-white"
