@@ -23,6 +23,8 @@ A developer-centric resume using Astro and Tailwind CSS. It separates content (M
 ├── .github/
 │   └── workflows/
 │       └── deploy.yml              # Automated DO deployment configuration
+├── infra/
+│   └── nginx.conf                  # Nginx configuration
 ├── public/
 ├── src/
 │   ├── components/                 # Shared UI components (e.g., PrintButton.astro)
