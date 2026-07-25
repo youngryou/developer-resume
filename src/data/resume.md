@@ -7,7 +7,7 @@ visa_status: "Permanent Resident Visa"
 
 github: "https://github.com/youngryou"
 linkedin: "https://linkedin.com/in/young-ryou/"
-portfolio: "TODO"
+portfolio: "https://youngryou.com/"
 ---
 
 # About Me
@@ -18,7 +18,7 @@ While taking a career break to raise my twin daughters, I took on the challenge 
 To learn how real-world teams write efficient code and communicate to prevent complex codebases from getting tangled, I enrolled in Dev Academy.
 Recently, I acted as Product Owner for a full-stack code typing game, guiding my team from concept to successful launch.
 I am now looking for a role where I can combine my business background with my technical skills to build robust, user-centric, expandable software.
-View my work at [portfolio link]().
+View my work at [portfolio link](https://youngryou.com/).
 
 # Skills
 
@@ -67,7 +67,7 @@ A fast paced web based code typing game designed to help developers improve thei
 </div>
 
 A reverse auction platform for the New Zealand vehicle repair market, allowing users to request and compare panel beating quotes.
-[[Launch Pending]()]
+[Launch Pending]
 
 - **Tech Stack:** `JavaScript` `PHP` `WordPress` `MySQL` `DigitalOcean`
 - **Role:** Sole Developer. Engineered the core application logic by implementing Layered Architecture (Domain, HTTP, Infra) within a custom plug-in structure and the database architecture from scratch.

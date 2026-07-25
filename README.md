@@ -20,6 +20,9 @@ A developer-centric resume using Astro and Tailwind CSS. It separates content (M
 
 ```text
 .
+├── .github/
+│   └── workflows/
+│       └── deploy.yml              # Automated DO deployment configuration
 ├── public/
 ├── src/
 │   ├── components/                 # Shared UI components (e.g., PrintButton.astro)
@@ -60,8 +63,8 @@ A developer-centric resume using Astro and Tailwind CSS. It separates content (M
    ```
 
 5. Open your browser:
-   - **Resume**: `http://localhost:4321/developer-resume`
-   - **Cover Letter**: `http://localhost:4321/developer-resume/cover`
+   - **Resume**: `http://localhost:4321`
+   - **Cover Letter**: `http://localhost:4321/cover`
 
 6. **To write and print your cover letter:**
    - Create the directory and the target file:
