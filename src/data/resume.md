@@ -6,8 +6,8 @@ location: "Auckland, New Zealand"
 visa_status: "Permanent Resident Visa"
 
 github: "https://github.com/youngryou"
-linkedin: "https://linkedin.com/in/young-ryou/"
-portfolio: "https://youngryou.com/"
+linkedin: "https://linkedin.com/in/young-ryou"
+portfolio: "https://youngryou.com"
 ---
 
 # About Me
@@ -18,7 +18,7 @@ While taking a career break to raise my twin daughters, I took on the challenge 
 To learn how real-world teams write efficient code and communicate to prevent complex codebases from getting tangled, I enrolled in Dev Academy.
 Recently, I acted as Product Owner for a full-stack code typing game, guiding my team from concept to successful launch.
 I am now looking for a role where I can combine my business background with my technical skills to build robust, user-centric, expandable software.
-View my work at [portfolio link](https://youngryou.com/).
+View my work at [portfolio link (youngryou.com)](https://youngryou.com).
 
 # Skills
 
@@ -50,7 +50,7 @@ View my work at [portfolio link](https://youngryou.com/).
 </div>
 
 A fast paced web based code typing game designed to help developers improve their syntax familiarity and typing speed.
-[[Live Demo](https://syntax-sprint.onrender.com/) | [GitHub Repo](https://github.com/youngryou/syntax-sprint)]
+[[Live Demo](https://syntax-sprint.onrender.com) | [GitHub Repo](https://github.com/youngryou/syntax-sprint)]
 
 - **Tech Stack:** `React` `TypeScript` `Node.js` `Express` `PostgreSQL`
 - **Role:** Acted as Product Owner and full-stack developer. Managed the project scope, designed the component architecture, and led the team from initial concept to successful MVP launch.

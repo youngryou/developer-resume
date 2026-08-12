@@ -6,6 +6,10 @@ location: "Auckland, New Zealand"
 company: "ABC Tech NZ"
 position: "Junior Full-Stack Developer"
 date: "8 July 2026"
+
+github: "https://github.com/youngryou"
+linkedin: "https://linkedin.com/in/young-ryou"
+portfolio: "https://youngryou.com"
 ---
 
 Dear Hiring Manager,

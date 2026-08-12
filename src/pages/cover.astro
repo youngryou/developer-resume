@@ -14,6 +14,19 @@ const { frontmatter, Content } = targetLetter;
 
 const email = import.meta.env.SECRET_EMAIL || "ry****@gmail.com";
 const phone = import.meta.env.SECRET_PHONE || "021-****-****";
+
+const github =
+  frontmatter.github ||
+  import.meta.env.SECRET_GITHUB ||
+  "https://github.com/youngryou";
+const linkedin =
+  frontmatter.linkedin ||
+  import.meta.env.SECRET_LINKEDIN ||
+  "https://linkedin.com/in/young-ryou";
+const portfolio =
+  frontmatter.portfolio ||
+  import.meta.env.SECRET_PORTFOLIO ||
+  "https://youngryou.com";
 ---
 
 <Layout title={`Cover Letter - ${frontmatter.name} | ${frontmatter.company}`}>
@@ -78,9 +91,60 @@ const phone = import.meta.env.SECRET_PHONE || "021-****-****";
     </header>
 
     <article
-      class="prose max-w-none text-slate-700 print:text-slate-900 leading-relaxed"
+      class="prose px-4 max-w-none text-slate-700 print:text-slate-900 leading-relaxed"
     >
       <Content />
     </article>
+
+    <footer class="mt-14 pt-8 border-t border-slate-200 print:border-slate-300">
+      <div
+        class="flex justify-center items-center text-slate-500 text-xs font-bold uppercase tracking-wider"
+      >
+        <div class="flex flex-wrap gap-x-4 gap-y-1">
+          <a
+            href={github}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-sky-700 print:text-slate-700 transition-colors"
+          >
+            Github <span
+              class="hidden print:inline text-[10px] font-normal lowercase"
+            >
+              ({github.replace(/^https?:\/\//, "")})</span
+            >
+          </a>
+
+          <span class="text-sky-200 print:text-slate-300">|</span>
+
+          <a
+            href={linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-sky-700 print:text-slate-700 transition-colors"
+          >
+            LinkedIn <span
+              class="hidden print:inline text-[10px] font-normal lowercase"
+            >
+              ({linkedin.replace(/^https?:\/\//, "")})</span
+            >
+          </a>
+
+          <span class="text-sky-200 print:text-slate-300">|</span>
+
+          <a
+            href={portfolio}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-sky-700 print:text-slate-700 transition-colors"
+          >
+            Portfolio <span
+              class="hidden print:inline text-[10px] font-normal lowercase"
+            >
+              ({portfolio.replace(/^https?:\/\//, "")})</span
+            >
+          </a>
+        </div>
+      </div>
+    </footer>
   </main>
 </Layout>
