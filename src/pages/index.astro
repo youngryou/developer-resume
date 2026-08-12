@@ -33,7 +33,11 @@ const phone = import.meta.env.SECRET_PHONE || "021-****-****";
             target="_blank"
             class="inline-block px-3 py-1 bg-sky-50 text-sky-700 border border-sky-200 rounded-md text-xs font-bold hover:bg-sky-100 transition-colors"
           >
-            Portfolio →
+            Portfolio <span
+              class="hidden print:inline text-[10px] font-normal lowercase"
+            >
+              ({frontmatter.portfolio.replace("https://", "")})</span
+            >
           </a>
         </div>
       </div>
