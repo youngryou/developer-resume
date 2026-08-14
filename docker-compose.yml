@@ -1,0 +1,11 @@
+services:
+  resume-app:
+    build: .
+    container_name: resume-app
+    restart: unless-stopped
+    networks:
+      - proxy-tier
+
+networks:
+  proxy-tier:
+    external: true
