@@ -17,5 +17,4 @@ jobs:
           script: |
             cd /var/www/resume
             git pull origin main
-            npm ci
-            npm run build
+            docker compose up --build -d
