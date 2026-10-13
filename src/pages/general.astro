@@ -1,0 +1,101 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { frontmatter, Content as IntroContent } from "../data/intro-general.md";
+import { Content as HistoryContent } from "../data/common-history.md";
+
+const email = import.meta.env.SECRET_EMAIL || "ry****@gmail.com";
+const phone = import.meta.env.SECRET_PHONE || "021-****-****";
+---
+
+<Layout title={`CV - ${frontmatter.name} | ${frontmatter.role}`}>
+  <main
+    class="max-w-[210mm] w-full mx-auto bg-white p-8 sm:p-14 shadow-lg my-10 print:max-w-none print:w-[210mm] print:shadow-none print:my-0 print:p-0"
+  >
+    <header class="mb-6">
+      <div
+        class="flex flex-col sm:flex-row justify-between items-start print:flex-row print:justify-between gap-4"
+      >
+        <div>
+          <h1
+            class="text-4xl font-black text-sky-700 uppercase tracking-wider print:text-3xl"
+          >
+            {frontmatter.name}
+          </h1>
+          <p
+            class="text-base font-bold text-slate-800 uppercase tracking-wider mt-1 print:text-sm"
+          >
+            {frontmatter.role}
+          </p>
+        </div>
+
+        <div>
+          <a
+            href={frontmatter.portfolio}
+            target="_blank"
+            class="inline-block mr-0.5 px-3 py-1 bg-sky-50 text-sky-700 border border-sky-200 rounded-md text-xs font-bold hover:bg-sky-100 transition-colors"
+          >
+            Portfolio <span
+              class="hidden print:inline text-[10px] font-normal lowercase"
+            >
+              ({frontmatter.portfolio.replace("https://", "")})</span
+            >
+          </a>
+        </div>
+      </div>
+
+      <div
+        class="mt-5 grid grid-cols-1 sm:grid-cols-3 print:grid-cols-3 gap-y-3 gap-x-6 text-xs text-slate-600 print:text-slate-800"
+      >
+        <div class="flex flex-col gap-1">
+          <span
+            class="font-bold text-[10px] uppercase tracking-wider text-sky-700"
+            >Profiles</span
+          >
+          <div class="flex flex-col gap-0.5 font-medium text-slate-700">
+            <a
+              href={frontmatter.linkedin}
+              target="_blank"
+              class="hover:text-sky-700 underline print:no-underline"
+            >
+              {frontmatter.linkedin.replace("https://", "")}
+            </a>
+            <a
+              href={frontmatter.portfolio}
+              target="_blank"
+              class="hover:text-sky-700 underline print:no-underline"
+            >
+              {frontmatter.portfolio.replace("https://", "")}
+            </a>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-1">
+          <span
+            class="font-bold text-[10px] uppercase tracking-wider text-sky-700"
+            >Contact</span
+          >
+          <div class="flex flex-col gap-0.5 font-medium text-slate-700">
+            <span>{phone}</span>
+            <span>{email}</span>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-1">
+          <span
+            class="font-bold text-[10px] uppercase tracking-wider text-sky-700"
+            >Eligibility</span
+          >
+          <div class="flex flex-col gap-0.5 font-medium text-slate-700">
+            <span>{frontmatter.location}</span>
+            <span>{frontmatter.visa_status}</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <article class="prose max-w-none">
+      <IntroContent />
+      <HistoryContent />
+    </article>
+  </main>
+</Layout>
