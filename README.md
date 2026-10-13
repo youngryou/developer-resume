@@ -4,7 +4,8 @@ A developer-centric resume using Astro and Tailwind CSS. It separates content (M
 
 ## Features
 
-- **Data-UI Separation:** Resume and cover letter content are managed via Markdown files.
+- **Data-UI Separation:** Resume and cover letter content are managed via modularised Markdown files.
+- **Dual-Target Routing:** Supports both a developer-centric CV (`/`) and a general-purpose CV (`/general`) sharing a single source of history.
 - **Print-Optimised (`@media print`):** Generates formatted, A4-sized PDFs directly from the browser without any layout breaks.
 - **Privacy First:** Sensitive personal information (like phone numbers and emails) is managed via environment variables and safely masked during public deployment.
 - **Cover Letter Management:** Includes a public sample file for deployment fallback and a `.gitignore`-protected folder to manage your actual cover letter locally without exposing it to the public repository.
@@ -30,12 +31,15 @@ A developer-centric resume using Astro and Tailwind CSS. It separates content (M
 │   ├── components/                 # Shared UI components (e.g., PrintButton.astro)
 │   ├── layouts/                    # Global layout containing @media print rules
 │   ├── data/
-│   │   ├── resume.md               # Core resume content
+│   │   ├── common-history.md       # Shared career, project, and education history
+│   │   ├── intro-dev.md            # Developer-tailored About Me & technical skills
+│   │   ├── intro-general.md        # General-purpose About Me & core competencies
 │   │   ├── cover-letter-sample.md  # Public fallback sample for deployment
 │   │   └── cover-letters/          # Local-only cover letters (ignored by Git)
 │   └── pages/
-│       ├── index.astro             # Main resume page
-│       └── cover.astro             # Cover letter page
+│       ├── index.astro             # Main developer CV (/)
+│       ├── general.astro           # General-purpose CV (/general)
+│       └── cover.astro             # Cover letter page (/cover)
 ├── .env.example                    # Template for environment variables
 └── .gitignore
 ```
@@ -65,7 +69,8 @@ A developer-centric resume using Astro and Tailwind CSS. It separates content (M
    ```
 
 5. Open your browser:
-   - **Resume**: `http://localhost:4321`
+   - **Developer CV**: `http://localhost:4321`
+   - **General CV**: `http://localhost:4321/general`
    - **Cover Letter**: `http://localhost:4321/cover`
 
 6. **To write and print your cover letter:**
