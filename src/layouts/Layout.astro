@@ -18,7 +18,7 @@ import "../styles/global.css";
   </head>
   <body
     class="bg-[linear-gradient(170deg,#0369a1_25%,#f3f4f6_25%,#f3f4f6_75%,#0369a1_75%)] min-h-screen
-           text-gray-900 font-sans print:bg-white print:text-black selection:bg-gray-200"
+           text-gray-900 font-sans print:bg-white print:bg-none print:text-black selection:bg-gray-200"
   >
     <Navigation />
     <PrintButton />
@@ -30,7 +30,7 @@ import "../styles/global.css";
   @reference "tailwindcss";
 
   .prose h1 {
-    @apply text-xl font-bold mt-6 mb-3 uppercase tracking-wider text-sky-700
+    @apply text-xl font-bold mt-5 mb-2.5 uppercase tracking-wider text-sky-700
            border-b border-slate-200 pb-1
            pl-3 border-l-4 border-l-sky-700;
   }
@@ -56,7 +56,7 @@ import "../styles/global.css";
     @apply font-semibold text-gray-700;
   }
   .prose hr {
-    @apply border-t border-slate-100 my-2;
+    @apply border-t border-slate-100 my-1.5;
   }
   .prose code {
     @apply inline-block px-1.5 mx-0.5 my-0.5 
