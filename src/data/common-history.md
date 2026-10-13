@@ -8,11 +8,11 @@
   <span class="entry-date">Aug 2026 - Oct 2026</span>
 </div>
 
-A full-stack online pre-order and store management platform designed for a New Zealand bakery.
-[[Live Site](https://sweetview.co.nz)]
+A full-stack online pre-order, payment, wholesale and store management platform designed for a New Zealand bakery.
+[[Live Site: sweetview.co.nz](https://sweetview.co.nz)]
 
 - **Tech Stack:** `React` `TypeScript` `Node.js` `Express` `PostgreSQL` `Firebase` `Stripe` `Docker`
-- **Architecture:** Monorepo structured into three distinct domains: **Public** (menu catalog, cart, cutoff-based pickup scheduling, Stripe checkout), **B2B** (wholesale bulk ordering, automated invoices), and **Admin** (live order tracking, sales reports, custom baking batch calculator, store configuration).
+- **Architecture:** Monorepo structured into three distinct domains: **Public** (menu, cart, cutoff-based pickup scheduling, Stripe checkout), **B2B** (wholesale bulk ordering, automated invoices), and **Admin** (live order tracking, sales reports, custom baking batch calculator, store configuration).
 - **Role & DevOps:** Sole Full-Stack Developer. Led client discovery, UI/UX design, full-stack implementation, and automated CI/CD pipelines via GitHub Actions (staging & main) deployed on DigitalOcean Docker containers.
 
 ---
@@ -26,7 +26,7 @@ A full-stack online pre-order and store management platform designed for a New Z
 </div>
 
 A fast-paced, web-based code typing game designed to help developers improve their syntax familiarity and typing speed.
-[[Live Demo](https://syntax-sprint.onrender.com) | [GitHub Repo](https://github.com/youngryou/syntax-sprint)]
+[[Live Demo: syntax-sprint.onrender.com](https://syntax-sprint.onrender.com) | [GitHub Repo: github.com/youngryou/syntax-sprint](https://github.com/youngryou/syntax-sprint)]
 
 - **Tech Stack:** `React` `TypeScript` `Node.js` `Express` `PostgreSQL` `Supabase` `Render`
 - **Role:** Acted as Product Owner and full-stack developer. Managed the project scope, designed the component architecture, and led the team from initial concept to successful MVP launch.
@@ -61,7 +61,7 @@ A reverse auction platform for the New Zealand vehicle repair market, allowing u
 
 - Delivered an end-to-end online pre-order and store management platform for a New Zealand bakery, managing turnkey delivery from branding/UI design to production launch.
 - Automated daily bakery operations by implementing cutoff-based pickup scheduling, Stripe online payments, and a custom baking batch calculator.
-- Established automated GitHub Actions CI/CD pipelines and deployed containerised services (Docker, Cloudflare) on DigitalOcean.
+- Established automated GitHub Actions CI/CD pipelines and deployed containerised services on DigitalOcean.
 
 ---
 
@@ -135,7 +135,7 @@ A reverse auction platform for the New Zealand vehicle repair market, allowing u
   <span class="entry-date">Jul 2013 - Apr 2015</span>
 </div>
 
-- Managed daily operations in a high-traffic environment, handling staff hiring, scheduling, customer relations, and complaint resolution.
+- Managed daily operations in a high-traffic environment, handling staff hiring, scheduling, and customer relations.
 
 # Education
 
